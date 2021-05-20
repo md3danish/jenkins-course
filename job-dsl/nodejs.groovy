@@ -14,5 +14,6 @@ job('NodeJS Create Pliplein Automatiily From DSL') {
     }
     steps {
         shell("npm install")
+        shell("echo test")
     }
 }

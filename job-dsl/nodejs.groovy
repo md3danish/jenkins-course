@@ -1,6 +1,6 @@
-job('NodeJS example') {
+job('NodeJS Create Pliplein Automatiily From DSL') {
     scm {
-        git('git://github.com/arjunachari12/docker-demo.git') {  node -> 
+        git('git://github.com/md3danish/docker-demo.git') {  node -> 
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
@@ -13,6 +13,7 @@ job('NodeJS example') {
                          
     }
     steps {
-        shell("npm install")
+        shell("npm install"),
+        shell("echo test")
     }
 }
